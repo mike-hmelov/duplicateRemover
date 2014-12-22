@@ -19,6 +19,7 @@ namespace duplicateRemover
             var searcher = new FileSearcher(config.WorkingDir);
             searcher.OnFileFound += (filePath) => 
             {
+                    Console.WriteLine(filePath);
             };
 
             searcher.Start();
@@ -26,7 +27,7 @@ namespace duplicateRemover
 
 		public static void Main (string[] args)
 		{
-			if (args.Length <= 0)
+			if (args.Length < 1)
             {
 				Console.Error.WriteLine ("Working directory should be provided");
 				Usage ();
