@@ -52,7 +52,9 @@ FILES = \
 	Program.cs \
 	Properties/AssemblyInfo.cs \
 	Config.cs \
-	FileSearcher.cs
+	FileSearcher.cs \
+	FileRegister.cs \
+	FileRemover.cs
 
 DATA_FILES = 
 
